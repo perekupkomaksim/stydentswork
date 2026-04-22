@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Підтримує .NET 6, 7 або 8 на Windows -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Lab23_Variant18</AssemblyName>
+    <RootNamespace>Lab23_Variant18</RootNamespace>
+    <ApplicationIcon />
+    <!-- Знімає попередження про застарілий ApplicationConfiguration -->
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+</Project>
