@@ -1,0 +1,75 @@
+﻿<Window x:Class="Wpftutorialsamples.Rich_text_controls.Richtexteditorsample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rich Text Editor Sample" Height="300" Width="400">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+    </Window.CommandBindings>
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top">
+            <Separator />
+            <Button Command="ApplicationCommands.Open">
+                <TextBlock FontSize="14" ToolTip="Відкрити">Відкрити</TextBlock>
+            </Button>
+            <Button Command="ApplicationCommands.Save">
+                <TextBlock FontSize="14" ToolTip="Зберегти">Зберегти</TextBlock>
+            </Button>
+            <Separator />
+            <Button Name="btnOpenCmd"
+                    Click="btnOpenCalc_Click">
+                <TextBlock FontSize="14" ToolTip="Відкрити калькулятор">Калькулятор</TextBlock>
+            </Button>
+            <Separator />
+            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold">
+                <TextBlock FontSize="16"
+                           FontWeight="Bold"
+                           Width="20"
+                           TextAlignment="Center"
+                           ToolTip="Жирний шрифт Ctrl+b">B</TextBlock>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic">
+                <TextBlock FontSize="16"
+                           FontStyle="Italic"
+                           Width="20"
+                           TextAlignment="Center"
+                           ToolTip="Косий шрифт Ctrl+i">I</TextBlock>
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline">
+                <TextBlock FontSize="20"
+                           TextDecorations="Underline"
+                           Width="20"
+                           TextAlignment="Center"
+                           ToolTip="Підкреслений шрифт Ctrl+u">U</TextBlock>
+            </ToggleButton>
+            <Separator />
+            <ComboBox Name="cmbFontFamily" Width="150"
+                      SelectionChanged="cmbFontFamily_SelectionChanged" />
+            <ComboBox Name="cmbFontSize" Width="50" IsEditable="True"
+                      TextBoxBase.TextChanged="cmbFontSize_TextChanged" />
+        </ToolBar>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="tbLineNumbers"
+                       Grid.Column="0"
+                       Background="LightGray"
+                       FontFamily="Courier New"
+                       FontSize="13"
+                       Padding="4,4,4,0"
+                       VerticalAlignment="Top"
+                       TextAlignment="Right"/>
+
+            <RichTextBox Name="rtbeditor"
+                         Grid.Column="1"
+                         FontFamily="Courier New"
+                         FontSize="13"
+                         SelectionChanged="rtbeditor_SelectionChanged"
+                         TextChanged="rtbeditor_TextChanged"/>
+        </Grid>
+    </DockPanel>
+</Window>
