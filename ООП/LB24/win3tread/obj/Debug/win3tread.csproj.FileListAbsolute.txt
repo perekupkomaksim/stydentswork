@@ -1,0 +1,9 @@
+C:\Users\Max\source\repos\win3tread\win3tread\bin\Debug\win3tread.exe.config
+C:\Users\Max\source\repos\win3tread\win3tread\bin\Debug\win3tread.exe
+C:\Users\Max\source\repos\win3tread\win3tread\bin\Debug\win3tread.pdb
+C:\Users\Max\source\repos\win3tread\win3tread\obj\Debug\win3tread.csproj.AssemblyReference.cache
+C:\Users\Max\source\repos\win3tread\win3tread\obj\Debug\win3tread.Properties.Resources.resources
+C:\Users\Max\source\repos\win3tread\win3tread\obj\Debug\win3tread.csproj.GenerateResource.cache
+C:\Users\Max\source\repos\win3tread\win3tread\obj\Debug\win3tread.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\win3tread\win3tread\obj\Debug\win3tread.exe
+C:\Users\Max\source\repos\win3tread\win3tread\obj\Debug\win3tread.pdb
